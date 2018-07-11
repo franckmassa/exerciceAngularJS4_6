@@ -8,11 +8,11 @@
   </head>
   <body ng-app>
     <!-- création des boutons pour afficher les textes 1 et 2-->
-          <button  ng-click="show=true">texte 1</button>
-          <button  ng-click="show=false">texte 2</button>
+          <button  ng-click="show=true" type="button" name="text2">texte 1</button>
+          <button  ng-click="show=false" type="button" name="text1">texte 2</button>
         <!--Utilisation de la directive ng-show pour afficher le textes 1-->
           <p ng-show="show">texte 1</p>
-          <!--Utilisation de la directive ng-show et le "!" (contraire) pour afficher le textes 2-->
-          <p ng-show="!show">texte 2</p>
+          <!--Utilisation de la directive ng-hide pour afficher le textes 2-->
+          <p ng-hide="show">texte 2</p>
   </body>
 </html>
